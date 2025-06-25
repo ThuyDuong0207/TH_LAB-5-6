@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thông tin</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.registration-form {
+  background: #fff;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  flex: 1 1 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+    </style>
+
+</head>
+<body>
+    <form class="registration-form">
+  <h2>Đăng ký thông tin</h2>
+  
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstName">Họ</label>
+      <input type="text" id="firstName" placeholder="">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Tên</label>
+      <input type="text" id="lastName" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="">
+    </div>
+    <div class="form-group">
+      <label for="phone">Số điện thoại</label>
+      <input type="tel" id="phone" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group full-width">
+      <label for="address">Địa chỉ</label>
+      <input type="text" id="address" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <button type="submit">Gửi đăng ký</button>
+  </div>
+</form>
+
+</body>
+</html>
