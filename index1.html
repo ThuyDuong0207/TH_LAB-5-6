@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #fb8de3;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        
+        .info {
+            max-width: 300px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .avatar {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://i.postimg.cc/ZKLtqv3d/IMG-5793.jpg" alt="Ảnh đại diện" class="avatar">
+        <div class="info">
+            <h2>Trần Thị Thùy Dương</h2>
+            <h3> DHTMDT19A</h3>
+            <p>Sinh viên ngành Thương mại điện tử của Trường Đại học Công nghiệp Thành phố Hồ Chí Minh.</p>
+        </div>
+    </div>
+</body>
+
+</html>
