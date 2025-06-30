@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  background-color: #1e1e2f;
+  padding: 20px;
+}
+
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0;
+  height: 2px;
+  background-color: #00d1ff;
+  transition: width 0.4s ease;
+}
+
+.nav-menu a:hover {
+  color: #00d1ff;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="#">Trang chủ</a></li>
+    <li><a href="#">Giới thiệu</a></li>
+    <li><a href="#">Dịch vụ</a></li>
+    <li><a href="#">Tin tức</a></li>
+    <li><a href="#">Liên hệ</a></li>
+  </ul>
+</nav>
+</body>
+</html>
