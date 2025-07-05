@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .project-card:hover {
+      background-color: #e0f7fa;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 16px;
+    }
+
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #00796b;
+    }
+
+    .project-description {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+     <h1>✨ Portfolio Cá Nhân ✨</h1>
+
+  <div class="portfolio-grid">
+
+    <div class="project-card">
+      <img src="https://i.postimg.cc/Vk2dv5hQ/IMG-5151.jpg" alt="Dự án 1">
+      <div class="project-content">
+        <div class="project-title">Website Cá Nhân</div>
+        <div class="project-description">Trần Thị Thùy Dương</div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://i.postimg.cc/26wqkZKk/IMG-4929.jpg" alt="Dự án 2">
+      <div class="project-content">
+        <div class="project-title">Cảnh quan</div>
+        <div class="project-description">Phong cảnh thiên nhiên thơ mộng.</div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://i.postimg.cc/KYrMpwFs/IMG-4151.jpg" alt="Dự án 3">
+      <div class="project-content">
+        <div class="project-title">Bình Minh</div>
+        <div class="project-description">Bình minh đẹp nhất khi được ngắm cùng người mình yêu.</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
