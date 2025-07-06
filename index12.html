@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .survey-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .survey-form h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px 12px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+
+    textarea:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    button:focus {
+      outline: 2px solid #1e7e34;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+    <form class="survey-form">
+    <h2>Khảo Sát Ý Kiến</h2>
+
+    <div class="form-group">
+      <label>Bạn hài lòng với dịch vụ của chúng tôi?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="satisfaction" value="yes" /> Có</label>
+        <label><input type="radio" name="satisfaction" value="no" /> Không</label>
+        <label><input type="radio" name="satisfaction" value="maybe" /> Bình thường</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Bạn quan tâm đến:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="topics" value="sp" /> Sản phẩm</label>
+        <label><input type="checkbox" name="topics" value="dv" /> Dịch vụ</label>
+        <label><input type="checkbox" name="topics" value="ht" /> Hỗ trợ</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Ý kiến đóng góp của bạn:</label>
+      <textarea placeholder="Nhập ý kiến tại đây..."></textarea>
+    </div>
+
+    <button type="submit">Gửi phản hồi</button>
+  </form>
+</body>
+</html>
