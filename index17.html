@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thông Tin Du Lịch</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      padding: 40px;
+    }
+
+    .travel-info {
+      display: flex;
+      gap: 30px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .travel-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .travel-text h2 {
+      margin-bottom: 16px;
+      color: #2c3e50;
+    }
+
+    .travel-text p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .travel-media {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .travel-media img,
+    .travel-media iframe {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .travel-info {
+        flex-direction: column;
+      }
+
+      .travel-media {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="travel-info">
+    <!-- Mô tả bên trái -->
+    <div class="travel-text">
+      <h2>Khám phá Đà Lạt – Thành phố ngàn hoa</h2>
+      <p>Đà Lạt là một trong những điểm đến nổi tiếng nhất Việt Nam, được mệnh danh là thành phố ngàn hoa với khí hậu mát mẻ quanh năm. Nơi đây nổi bật với các địa điểm như Hồ Xuân Hương, Thung lũng Tình yêu, Vườn hoa thành phố và nhiều quán cà phê xinh đẹp.</p>
+      <p>Bạn có thể tận hưởng không khí trong lành, ngắm cảnh rừng thông, hoặc tham quan các ngôi nhà kiến trúc Pháp cổ kính. Đà Lạt là lựa chọn lý tưởng cho những ai yêu thích sự lãng mạn và yên bình.</p>
+    </div>
+
+    <!-- Ảnh hoặc bản đồ bên phải -->
+    <div class="travel-media">
+      <!-- Thay ảnh bằng bản đồ nếu muốn -->
+      <img src="https://i.postimg.cc/KYrMpwFs/IMG-4151.jpg" alt="Đà Lạt" />
+      <!-- Hoặc thay bằng iframe bản đồ Google Map:
+      <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      -->
+    </div>
+  </div>
+
+</body>
+</html>
