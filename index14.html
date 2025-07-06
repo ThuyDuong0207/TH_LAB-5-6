@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .feedback-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      display: grid;
+      gap: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #444;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .stars input {
+      display: none;
+    }
+
+    .stars label {
+      color: #ccc;
+      transition: color 0.3s;
+    }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: #f5b301;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:focus {
+      outline: 2px solid #004085;
+      outline-offset: 2px;
+    }
+    </style>
+</head>
+<body>
+    <form class="feedback-form">
+    <h2>Gửi Phản Hồi</h2>
+
+    <div class="form-group">
+      <label for="email">Email của bạn</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+    </div>
+
+    <div class="form-group">
+      <label>Đánh giá dịch vụ</label>
+      <div class="stars">
+        <input type="radio" name="star" id="star5" value="5" />
+        <label for="star5">&#9733;</label>
+        <input type="radio" name="star" id="star4" value="4" />
+        <label for="star4">&#9733;</label>
+        <input type="radio" name="star" id="star3" value="3" />
+        <label for="star3">&#9733;</label>
+        <input type="radio" name="star" id="star2" value="2" />
+        <label for="star2">&#9733;</label>
+        <input type="radio" name="star" id="star1" value="1" />
+        <label for="star1">&#9733;</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Ý kiến đóng góp</label>
+      <textarea id="comment" placeholder="Nhập nội dung tại đây..."></textarea>
+    </div>
+
+    <button type="submit">Gửi Phản Hồi</button>
+  </form>
+</body>
+</html>
