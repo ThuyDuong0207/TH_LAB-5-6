@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.news-item {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.news-item:hover {
+  transform: translateY(-6px);
+}
+
+.news-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.news-item:hover .news-image {
+  transform: scale(1.1);
+}
+
+.news-content {
+  padding: 16px;
+}
+
+.news-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 12px;
+  color: #333;
+}
+
+.news-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+    </style>
+</head>
+<body>
+    <div class="news-grid">
+  <div class="news-item">
+    <div class="news-image" style="background-image: url('https://i.postimg.cc/254QR3dG/IMG-0067.jpg');"></div>
+    <div class="news-content">
+      <h2 class="news-title">Tiêu đề bài viết nổi bật</h2>
+      <p class="news-description">Mô tả ngắn gọn về nội dung bài viết để thu hút người đọc...</p>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-image" style="background-image: url('https://i.postimg.cc/KYrMpwFs/IMG-4151.jpg');"></div>
+    <div class="news-content">
+      <h2 class="news-title">Tiêu đề tiếp theo</h2>
+      <p class="news-description">Một mô tả ngắn khác để minh họa nội dung bài viết...</p>
+    </div>
+  </div>
+
+  <!-- Thêm các bài viết khác -->
+</div>
+
+</body>
+</html>
