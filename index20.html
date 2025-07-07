@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cv-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding: 40px;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.cv-left, .cv-right {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cv-left h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.cv-left h3,
+.cv-right h3 {
+  margin-top: 30px;
+  color: #2980b9;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 6px;
+}
+
+.info-item,
+.section-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.icon {
+  font-size: 1.2rem;
+  width: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+</head>
+<body>
+   <div class="cv-container">
+  <!-- Cột trái: Thông tin cá nhân -->
+  <div class="cv-left">
+    <h2>Trần Thị Thuỳ Dương</h2>
+    <div class="info-item">
+      <span class="icon">📞</span>
+      <span>0123 456 789</span>
+    </div>
+    <div class="info-item">
+      <span class="icon">✉️</span>
+      <span>duong@example.com</span>
+    </div>
+    <div class="info-item">
+      <span class="icon">📍</span>
+      <span>Hà Nội, Việt Nam</span>
+    </div>
+    <h3>Học vấn</h3>
+    <div class="info-item">
+      <span class="icon">🎓</span>
+      <span>Đại học Thương mại – TMĐT</span>
+    </div>
+  </div>
+
+  <!-- Cột phải: Kinh nghiệm và Kỹ năng -->
+  <div class="cv-right">
+    <h3>Kinh nghiệm</h3>
+    <div class="section-item">
+      <span class="icon">💼</span>
+      <div>
+        <strong>Thực tập sinh Content</strong><br>
+        Shopee Việt Nam – 2024
+      </div>
+    </div>
+    <div class="section-item">
+      <span class="icon">🌐</span>
+      <div>
+        <strong>Dự án Website HTML/CSS</strong><br>
+        Tự thực hiện – 2025
+      </div>
+    </div>
+
+    <h3>Kỹ năng</h3>
+    <div class="section-item">
+      <span class="icon">⚙️</span>
+      <div>HTML, CSS, Flexbox, Grid</div>
+    </div>
+    <div class="section-item">
+      <span class="icon">🗣</span>
+      <div>Kỹ năng giao tiếp, làm việc nhóm</div>
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>
